@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAMING ZONE</title>
+  <link rel="stylesheet" href="GAME.css">
+</head>
+<body>
+  <h1>LET'S PLAY GAMES</h1>
+  <div id="span">
+  <h3 class="level-text">LEVEL 1</h3>
+  <!-- Rock Paper Scissors -->
+  <div id="rps-game">
+    <h2>ROCK PAPER SCISSORS</h2>
+    <div class="Choices"> 
+      <div class="choice" id="rock">
+        <img src="https://sihoonathan.github.io/rock-paper-scissors/assets/img/rock2.png">
+      </div>
+      <div class="choice" id="paper">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.FcTXkLxB9Gbz4hDThAyEnQAAAA?pid=Api&P=0&h=180">
+      </div>
+      <div class="choice" id="scissors">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.Z-v9MuiYtOw65OWa4zgyyAAAAA?pid=Api&P=0&h=180">
+      </div>
+    </div>
+
+    <div class="name-input">
+      <input type="text" id="username-input" placeholder="Enter your name">
+      <button id="save-name-btn">Start</button>
+    </div>
+
+    <div class="score_board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p id="user-name">You</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Computer</p>
+      </div>
+    </div>
+
+    <div class="msg-container">
+      <p id="msg">Play your move</p>
+      <p>Your choice: <span id="user-choice">-</span></p>
+      <p>Computer's choice: <span id="comp-choice">-</span></p>
+    </div>
+    <button id="next-level-btn" style="display: none;">Start Next Level</button>
+  </div> 
+
+
+  <!-- Tic Tac Toe -->
+  <div id="tictactoe-game" style="display: none;">
+    <h2>Tic Tac Toe</h2>
+    <div id="board"></div>
+    <p id="ttt-msg">Your turn!</p>
+    <div class="ttt-controls" style="display: none;">
+      <button id="restart-ttt-btn">Restart</button>
+      <button id="next-level-btn-ttt">Start Next Level</button>
+    </div>
+  </div>
+  </div>
+
+  <script src="GAME.js"></script>
+</body>
+</html>

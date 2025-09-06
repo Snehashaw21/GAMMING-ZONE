@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+h1 {
+  background-color: #081b31;
+  color: #fff;
+  height: 4rem;
+  line-height: 4rem;
+}
+h2 {
+  margin-top: 1rem;
+}
+
+/* Rock Paper Scissors */
+#span{
+  background-color:plum ;
+  height: 17.6cm;
+  width: 40.6cm;
+}
+.choice {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.choice:hover {
+  background-color: black;
+}
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.Choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.score_board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  gap: 5rem;
+}
+#user-score,
+#comp-score {
+  font-size: 4rem;
+  color: #081b31;
+}
+.msg-container {
+  margin-top: 3rem;
+}
+#msg {
+  background-color: #081b31;
+  color: white;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 0.6rem 0.6rem;
+  border-radius: 1rem;
+}
+.msg-container p {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+}
+#user-choice,
+#comp-choice {
+  font-weight: bold;
+  color: #081b31;
+  text-transform: capitalize;
+}
+.name-input {
+  margin-top: 1rem;
+}
+#username-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+#save-name-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #081b31;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#save-name-btn:hover {
+  background-color: #063266;
+}
+#next-level-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background-color: #081b31;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#next-level-btn:hover {
+  background-color: #063266;
+}
+
+/* Tic Tac Toe */
+#tictactoe-game {
+  margin-top: 2rem;
+}
+#board {
+  max-width: 300px;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background-color: #0a3d62;
+  padding: 8px;
+  border-radius: 12px;
+}
+.cell {
+  background: #fdfdfd;
+  border-radius: 8px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0a3d62;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.cell:hover {
+  background: #ffeaa7;
+  transform: scale(1.05);
+}
+#ttt-msg {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+.ttt-controls {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+#restart-ttt-btn,
+#next-level-btn-ttt {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  background-color: #0a3d62;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#restart-ttt-btn:hover,
+#next-level-btn-ttt:hover {
+  background-color: #145da0;
+}
